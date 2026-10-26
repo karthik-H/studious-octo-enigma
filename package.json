@@ -1,0 +1,20 @@
+{
+  "name": "studious-octo-enigma",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ecommerce service with registration, login, and a product catalog.",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.19.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
