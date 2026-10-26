@@ -2,13 +2,14 @@
 
 TypeScript ecommerce service with account registration, login, and a product catalog.
 
-Data is kept in memory and resets when the process stops. Set `AUTH_SECRET` before running anywhere other than local development. Tokens expire after 24 hours.
+Accounts and products are stored in PostgreSQL. Set `DATABASE_URL` and set `AUTH_SECRET` before running anywhere other than local development. Tokens expire after 24 hours.
 
 ## Run
 
 ```bash
+docker compose up -d
 npm install
-npm run dev
+DATABASE_URL=postgres://ecommerce:ecommerce@localhost:5434/ecommerce npm run dev
 ```
 
 `npm run build` compiles to `dist/`, and `npm start` runs the compiled server. The default port is `3000` (`PORT` overrides it).
